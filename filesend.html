@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TSG File Send</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+	<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+		background-image: url('http://www.shiptsg.com/Dev/../assets/img/texturebg.jpg');
+
+      }
+	  
+	  .controls {
+	  
+	          max-width: 300px;
+
+	  
+	  }
+
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+	  
+	  .container {
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"] {
+width: 100%;
+}
+
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+	
+	<div class='row'>
+	</div>
+
+      <form name="myForm" class="form-horizontal" action="send.php" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+<fieldset>
+
+<!-- Form Name -->
+<img class="img" src="../assets/img/TSG Logo_116 tall.png" alt="TSG"><legend>TSG File Submit</legend>
+
+<!-- Select Basic -->
+<div class="control-group">
+  <label class="control-label" for="Recipient">Recipient</label>
+  <div class="controls">
+    <select id="Recipient" name="Recipient" class="input-xlarge">
+<option value='CCole@ShipTSG.com'>Charles Cole</option>
+<option value='tload@ShipTSG.com'>Truck Load</option>
+<option value='AKaye@shiptsg.com'>Alex Kaye</option>
+<option value='CEaton@shiptsg.com'>Caroline Eaton</option>
+<option value='Claims@shiptsg.com'>Claims</option>
+<option value='DHassur@shiptsg.com'>David Hassur</option>
+<option value='DCarr@shiptsg.com'>Dawn Carr</option>
+<option value='Dispatch@shiptsg.com'>Dispatch</option>
+<option value='ECraven@shiptsg.com'>Emmie Craven</option>
+<option value='GaryFox@shiptsg.com'>Gary Fox</option>
+<option value='GSmith@shiptsg.com'>Gary Smith</option>
+<option value='HeatherClark@shiptsg.com'>Heather Clark</option>
+<option value='Helpdesk@shiptsg.com'>Helpdesk</option>
+<option value='HShackelford@shiptsg.com'>Holly Shackelford</option>
+<option value='JCarr@shiptsg.com'>Jay Carr</option>
+<option value='JPrince@shiptsg.com'>Jay Prince</option>
+<option value='JMiller@shiptsg.com'>John Miller</option>
+<option value='KKaye@shiptsg.com'>Kevin Kaye</option>
+<option value='KEdler@shiptsg.com'>Kim Edler</option>
+<option value='KJenkins@shiptsg.com'>Kim Jenkins</option>
+<option value='KStriker@shiptsg.com'>Kim Striker</option>
+<option value='LButchart@shiptsg.com'>Laurie Butchart</option>
+<option value='LClark@shiptsg.com'>Lee Clark</option>
+<option value='MCohen@shiptsg.com'>Mike Cohen</option>
+<option value='MBerry@shiptsg.com'>Missy Berry</option>
+<option value='NSatkofsky@shiptsg.com'>Nicole Satkofsky</option>
+<option value='PBostwick@shiptsg.com'>Patrick Bostwick</option>
+<option value='PCarr@shiptsg.com'>Phil Carr</option>
+<option value='RMcCoy@shiptsg.com'>Rob McCoy</option>
+<option value='RMinerd@shiptsg.com'>Ryan Minerd</option>
+<option value='SJanssen@shiptsg.com'>Scott Janssen</option>
+<option value='SAshby@shiptsg.com'>Shawn Ashby</option>
+<option value='SJohnson@shiptsg.com'>Shonda Johnson</option>
+<option value='SMcBee@shiptsg.com'>Sloan McBee</option>
+<option value='STullis@shiptsg.com'>Sonya Tullis</option>
+<option value='TRoach@shiptsg.com'>Taylor Roach</option>
+<option value='TGarrison@shiptsg.com'>Tracy Garrison</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="control-group">
+  <label class="control-label" for="sender">Your Email</label>
+  <div class="controls">
+    <input id="sender" name="sender" type="text" placeholder="Your.Name@Your.Company.com" class="input-xlarge" required="">
+    
+  </div>
+</div>
+<!-- File Button --> 
+<div class="control-group">
+  <label class="control-label" for="file">Choose a File to Send</label>
+  <div class="controls">
+    <input id="file" name="file" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="control-group">
+  <label class="control-label" for="submit"></label>
+  <div class="controls">
+    <button id="submit" name="submit" class="btn btn-primary">Send</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script>
+	function validateForm()
+{
+var x=document.forms["myForm"]["totalCost"].value;
+if (x==null || x=="")
+  {
+  alert("Total Claim Value Must Be Filled In");
+  return false;
+  }
+}
+	</script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
